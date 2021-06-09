@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_08_192438) do
+ActiveRecord::Schema.define(version: 2021_06_09_154902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_192438) do
     t.string "title"
     t.string "artist"
     t.string "time"
-    t.boolean "isFavorite"
+    t.boolean "isFavorite", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
